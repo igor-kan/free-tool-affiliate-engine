@@ -1,0 +1,17 @@
+page_title: Free AI Ops Tool Stack
+disclosure: "Disclosure: Some links are affiliate links."
+tools:
+  - name: Lead Capture Lite
+    category: leadgen
+    summary: Capture and qualify inbound leads quickly.
+    link: https://example.com/lead-capture-lite
+    affiliate_link: https://example.com/lead-capture-lite?ref=igor
+    pricing: freemium
+    rating: 4.5
+  - name: SEO Snapshot
+    category: seo
+    summary: Quick page-level SEO audit output.
+    link: https://example.com/seo-snapshot
+    affiliate_link: https://example.com/seo-snapshot?ref=igor
+    pricing: free
+    rating: 4.2

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page_title }}</title>
+  <style>
+    body { font-family: "IBM Plex Sans", sans-serif; margin: 20px; }
+    .note { background: #fff8dc; border: 1px solid #f1d284; padding: 10px; border-radius: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
+  </style>
+</head>
+<body>
+  <h1>{{ page_title }}</h1>
+  <p class="note">{{ disclosure }}</p>
+  <section class="grid">
+    {% for tool in tools %}
+    <article class="card">
+      <h3>{{ tool.name }}</h3>
+      <p><strong>Category:</strong> {{ tool.category }} | <strong>Pricing:</strong> {{ tool.pricing }}</p>
+      <p>{{ tool.summary }}</p>
+      <p><strong>Rating:</strong> {{ tool.rating }}</p>
+      <p><a href="{{ tool.link }}">Product</a> | <a href="{{ tool.affiliate_link }}">Affiliate Link</a></p>
+    </article>
+    {% endfor %}
+  </section>
+</body>
+</html>
